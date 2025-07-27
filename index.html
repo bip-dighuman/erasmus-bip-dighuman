@@ -14,22 +14,39 @@
             background-color: #f9f9f9;
         }
         header {
-            background-color: #0056b3;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            background: linear-gradient(to right, #ffffff, #e6f2ff);
+            color: #0056b3;
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 3px solid #0056b3;
         }
-        header h1 {
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo {
+            height: 70px;
+            border-radius: 10px;
+        }
+        .header-text h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
+            color: #003366;
         }
-        header p {
-            font-size: 1.2rem;
+        .header-text p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            color: #0073e6;
+            font-style: italic;
         }
         nav {
             background: #f4f4f4;
             padding: 10px 0;
             text-align: center;
+            border-bottom: 1px solid #ddd;
         }
         nav a {
             margin: 0 15px;
@@ -43,13 +60,18 @@
         section {
             padding: 20px;
             margin: 20px auto;
-            max-width: 800px;
+            max-width: 900px;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #0056b3;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #333;
+            margin-top: 20px;
             margin-bottom: 10px;
         }
         .highlight {
@@ -67,6 +89,7 @@
             width: 100%;
             border-collapse: collapse;
             text-align: left;
+            margin-bottom: 20px;
         }
         table th, table td {
             padding: 8px;
@@ -75,6 +98,17 @@
         table th {
             background-color: #0056b3;
             color: white;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         footer {
             text-align: center;
@@ -89,35 +123,32 @@
 </head>
 <body>
     <header>
-        <h1>Erasmus+ BIP on Digital Humanities</h1>
-        <p>Fostering interdisciplinary collaboration in Digital Humanities</p>
+        <div class="header-container">
+            <img src="logo.jpeg" alt="BIP DigHuman Logo" class="logo">
+            <div class="header-text">
+                <h1>Erasmus+ BIP on Digital Humanities</h1>
+                <p>Fostering interdisciplinary collaboration in Digital Humanities</p>
+            </div>
+        </div>
     </header>
+
     <nav>
-        <a href="#program">Program</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#learning">Learning Approach</a>
+        <a href="#program-presentation">Program Presentation & Scheduling</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#groups">Groups</a>
+        <a href="#photo-gallery">Photo Gallery</a>
         <a href="#recognition">Academic Recognition</a>
-        <a href="#online-program">Online Program</a>
     </nav>
-    <section id="program">
-        <h2>The Program</h2>
-        <p>The Erasmus+ Blended Intensive Program on Digital Humanities (digHuman) aims to foster interdisciplinary collaboration among students from different backgrounds in the field of digital humanities.</p>
+
+    <section id="program-presentation">
+        <h2>Program Presentation and Scheduling</h2>
+        <p>The Erasmus+ Blended Intensive Program on Digital Humanities (digHuman) combines online learning and an immersive onsite week to foster interdisciplinary collaboration.</p>
         <div class="highlight">
             <p>Digital humanities combines IT methods, tools, and techniques with humanities disciplines such as literature, history, linguistics, philosophy, or cultural studies.</p>
         </div>
         <p>The digHuman Erasmus+ BIP is organized by Università degli Studi di Salerno (Italy), Universidade do Porto (Portugal), and Universitat Politècnica de València (Spain).</p>
-    </section>
-    <section id="schedule">
-        <h2>Schedule and Organization</h2>
-        <p>The program is divided into two periods:</p>
-        <ul>
-            <li><strong>Online Program:</strong> March 3 – May 30, June 30 – July 11, 2025.</li>
-            <li><strong>Onsite Week:</strong> July 21–25, 2025 in Salerno, Italy.</li>
-        </ul>
-        <p>During the onsite week, participants will visit the collaborating organization, define and present projects, and engage in social and cultural activities.</p>
-    </section>
-    <section id="learning">
-        <h2>Learning Approach</h2>
+
+        <h3>Learning Approach</h3>
         <p>The digHuman consortium adopts a Challenge-Based Learning approach, encouraging students to tackle real-world interdisciplinary challenges relevant to their lives.</p>
         <ul>
             <li>Synchronous and asynchronous learning</li>
@@ -125,13 +156,16 @@
             <li>Focus on critical thinking, problem-solving, and collaboration</li>
         </ul>
         <p>Interactive discussions, brainstorming, and teamwork will be key components of the program, helping students receive immediate feedback and prepare for complex challenges.</p>
-    </section>
-    <section id="recognition">
-        <h2>Academic Recognition</h2>
-        <p>Participants will receive a 6 ECTS certificate of participation. At UPV, these credits will be recognized as "degree activities."</p>
-    </section>
-    <section id="online-program" class="mb-5">
-        <h2>Online Program</h2>
+
+        <h3>Schedule</h3>
+        <p>The program is divided into two periods:</p>
+        <ul>
+            <li><strong>Online Program:</strong> March 3 – May 30, June 30 – July 11, 2025.</li>
+            <li><strong>In-person Week:</strong> July 20–26, 2025 in Salerno, Italy.</li>
+        </ul>
+        <p>During the in-person week, participants will visit collaborating organizations, define and present projects, and engage in social and cultural activities.</p>
+
+        <h3>Online Program</h3>
         <p>An online meeting per week, plus some autonomous activities:</p>
         <table>
             <thead>
@@ -181,7 +215,97 @@
                 </tr>
             </tbody>
         </table>
+
+        <h3>In-person Week Program (20–26 July 2025, Salerno, Italy)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>20/07/25 (Sun)</td><td>19:00</td><td>Pick up at Salerno train station</td></tr>
+                <tr><td></td><td>20:00</td><td>Arrival at UNISA</td></tr>
+                <tr><td></td><td>20:30</td><td>Welcome Reception</td></tr>
+                <tr><td>21/07/25 (Mon)</td><td>09:15</td><td>Meeting at UNISA</td></tr>
+                <tr><td></td><td>09:25 – 10:04</td><td>Departure to Scuola Medica Salernitana</td></tr>
+                <tr><td></td><td>10:20 – 12:00</td><td>Cultural visit</td></tr>
+                <tr><td></td><td>12:20 – 13:00</td><td>Return to UNISA</td></tr>
+                <tr><td></td><td>13:00 – 14:30</td><td>Lunch</td></tr>
+                <tr><td></td><td>14:30 – 17:00</td><td>Project development session</td></tr>
+                <tr><td>22/07/25 (Tue)</td><td>09:30 – 13:00</td><td>Project development session</td></tr>
+                <tr><td></td><td>13:00 – 14:30</td><td>Lunch</td></tr>
+                <tr><td></td><td>14:30</td><td>Free time</td></tr>
+                <tr><td>23/07/25 (Wed)</td><td>09:30 – 13:00</td><td>Project development session</td></tr>
+                <tr><td></td><td>13:00 – 14:30</td><td>Lunch</td></tr>
+                <tr><td></td><td>14:30 – 17:00</td><td>Project development session</td></tr>
+                <tr><td>24/07/25 (Thu)</td><td>09:30 – 13:00</td><td>Project Refinement</td></tr>
+                <tr><td></td><td>13:00 – 14:30</td><td>Lunch</td></tr>
+                <tr><td></td><td>14:30 – 17:00</td><td>Project Presentation</td></tr>
+                <tr><td>25/07/25 (Fri)</td><td>09:00</td><td>Meeting at UNISA</td></tr>
+                <tr><td></td><td>09:15</td><td>Departure for Paestum</td></tr>
+                <tr><td></td><td>11:30 – 14:30</td><td>Guided visit of Vannulo buffalo dairy farm & farewell lunch</td></tr>
+                <tr><td></td><td>14:30</td><td>Departure for Paestum Archaeological Park</td></tr>
+                <tr><td></td><td>14:30 – 18:00</td><td>Visit to Paestum Archaeological Park and Museum</td></tr>
+                <tr><td></td><td>18:30</td><td>Departure for Fisciano</td></tr>
+                <tr><td>26/07/25 (Sat)</td><td>09:00</td><td>Meeting at UNISA</td></tr>
+                <tr><td></td><td>09:15</td><td>Departure for Ravello and visit to Villa Rufolo</td></tr>
+            </tbody>
+        </table>
     </section>
+
+    <section id="organizers">
+        <h2>Organizers</h2>
+        <ul>
+            <li>Filomena Ferrucci, Andrea Francesco Abate, Fabio Palomba (University of Salerno)</li>
+            <li>Eduardo Vendrell Vidal (Universitat Politècnica de València)</li>
+            <li>Fernanda Riberio (University of Porto)</li>
+        </ul>
+    </section>
+
+    <section id="groups">
+        <h2>Groups</h2>
+        <p>Below is the list of participating teams with links to their materials.</p>
+        <ul>
+            <li><strong>T1 - Mentha:</strong> Daniele Calisti, Rosa María Hernández Valero, Ana Carolina Ramalho Sampaio, Francisco Soares Ferreira, Alessandra Raia - 
+                <a href="#">Presentation</a> | <a href="#">Project Description</a></li>
+            <li><strong>T2 - Salvia:</strong> Benedetto Scala, Andrea Nieto Gil, Ana Maria Celonenco, Maria José Freitas da Costa - 
+                <a href="#">Presentation</a> | <a href="#">Project Description</a></li>
+            <li><strong>T3 - Mandragora:</strong> Pietro Pascarella, Nicola Plamenov Lozanov, Davi Furtado Rios, Nancy Hitomi Korim, Eduarda Filipa Duarte das Neves - 
+                <a href="#">Presentation</a> | <a href="#">Project Description</a></li>
+            <li><strong>T4 - Giusquiamo:</strong> Guido Immediata, Rubén Nieto Val, Edgar Vivien Airault, Rebeca dos Reis Bento - 
+                <a href="#">Presentation</a> | <a href="#">Project Description</a></li>
+            <li><strong>T6 - Melissa:</strong> Martina De Lucia, Michele Pesce, Lorenza Anna Torpinoche, Lara Máximo Pinto - 
+                <a href="#">Presentation</a> | <a href="#">Project Description</a></li>
+        </ul>
+    </section>
+
+    <section id="photo-gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="pictures/WhatsApp Image 2025-07-20 at 22.21.56.jpeg" alt="Dinner event">
+            <img src="pictures/WhatsApp Image 2025-07-21 at 11.16.49.jpeg" alt="Group activity 1">
+            <img src="pictures/WhatsApp Image 2025-07-21 at 11.16.50.jpeg" alt="Group activity 2">
+            <img src="pictures/WhatsApp Image 2025-07-21 at 11.24.07.jpeg" alt="Group activity 3">
+            <img src="pictures/WhatsApp Image 2025-07-21 at 11.24.07 (1).jpeg" alt="Group activity 4">
+            <img src="pictures/WhatsApp Image 2025-07-24 at 16.14.47.jpeg" alt="Group presentation 1">
+            <img src="pictures/WhatsApp Image 2025-07-24 at 16.14.48.jpeg" alt="Group presentation 2">
+            <img src="pictures/WhatsApp Image 2025-07-24 at 16.14.49.jpeg" alt="Group presentation 3">
+            <img src="pictures/WhatsApp Image 2025-07-24 at 16.14.50.jpeg" alt="Group presentation 4">
+            <img src="pictures/WhatsApp Image 2025-07-24 at 16.14.50 (1).jpeg" alt="Group presentation 5">
+            <img src="pictures/WhatsApp Image 2025-07-25 at 14.52.44.jpeg" alt="Certificate ceremony">
+            <img src="pictures/WhatsApp Image 2025-07-25 at 17.22.29.jpeg" alt="Paestum ruins 1">
+            <img src="pictures/WhatsApp Image 2025-07-25 at 17.24.22.jpeg" alt="Paestum ruins 2">
+        </div>
+    </section>
+
+    <section id="recognition">
+        <h2>Academic Recognition</h2>
+        <p>Participants will receive a 6 ECTS certificate of participation. At UPV, these credits will be recognized as "degree activities."</p>
+    </section>
+
     <footer>
         <p>Organized by Università degli Studi di Salerno, Universidade do Porto, and Universitat Politècnica de València.</p>
     </footer>
